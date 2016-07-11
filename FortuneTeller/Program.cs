@@ -14,75 +14,76 @@ namespace FortuneTeller
 
             Console.WriteLine("What is your first name?");
             string firstname = Console.ReadLine();
-            Console.WriteLine(firstname);
+            
 
             Console.WriteLine("What is your last name?");
             string lastname = Console.ReadLine();
-            Console.WriteLine(lastname);
+            
 
             Console.WriteLine("What is your age?");
             int age = int.Parse(Console.ReadLine());
-            Console.WriteLine(age);
+            
 
             Console.WriteLine("What is your birth month?");
             string birth = Console.ReadLine();
-            Console.WriteLine(birth);
             
-            Console.WriteLine("What is your favorite color from ROYGBIV? If you do not know what ROYGBIV is please type, Help.");
-            string color = Console.ReadLine();
+            
+            
+            
 
-            if (color == "help")
+            while (true)
             {
-                Console.WriteLine("ROYGBIV = Red, Orange, Yellow, Green, Blue, Indigo, Violet.");
+                Console.WriteLine("What is your favorite color from ROYGBIV? If you do not know what ROYGBIV is please type, Help.");
+                string color = Console.ReadLine();
+
+                if (color == "help")
+                {
+                    Console.WriteLine("ROYGBIV = Red, Orange, Yellow, Green, Blue, Indigo, Violet.");
+                    
+                }
+                else if (color == "red")
+                {
+                    break;
+                }
+                else if (color == "orange")
+                {
+                    break;
+                }
+                else if (color == "yellow")
+                {
+                    break;
+                }
+                else if (color == "green")
+                {
+                    break;
+                }
+                else if (color == "blue")
+                {
+                    break;
+                }
+                else if (color == "indigo")
+                {
+                    break;
+                }
+                else if (color == "violet")
+                {
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Invalid color");
+                   
+                }
+                
             }
-            else if (color == "red")
-            {
-
-            }
-            else if (color == "orange")
-            {
-
-            }
-            else if (color == "yellow")
-            {
-
-            }
-            else if (color == "green")
-            {
-
-            }
-            else if (color == "blue")
-            {
-
-            }
-            else if (color == "indigo")
-            {
-
-            }
-            else if (color == "violet")
-            {
-
-            }
-            else
-            {
-                Console.WriteLine("Invalid color");
-            }
-            Console.WriteLine(color);
 
 
-
-            // colors of ROYGBIV ROUGE, ORANGE, JEUNE, VERDE, BLU, INDIGO, VIOLET
-            // int color = rouge;
-            // privite static int rouge;
-            // Console.WriteLine(color);
+           
 
 
-            //Console.WriteLine("How many siblings do you have?");
-            //     Part 1
-
-            //If the user does not know what ROYGBIV is, ask them to enter “Help” (print with the quotation marks) to get a list of the ROYGBIV colors
-            //Ask the user for the number of siblings the user has
-            //Part 2
+            Console.WriteLine("How many siblings do you have?");
+            int siblings = int.Parse(Console.ReadLine());
+            
 
             //If the user’s age is an odd number, then they will retire in ____ years, or ___ years if their age is an even number.
             //If the user’s number of siblings is 0, then they will live in __(location), or 1 then they will live in __(location), or 2 then they will live in ___(location), or 3 then they will live in ___(location), or more than 3 then they will live in ____(location).
